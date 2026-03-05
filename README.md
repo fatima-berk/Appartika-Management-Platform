@@ -11,13 +11,12 @@ L'objectif d'Appartika est de digitaliser les processus manuels de location en o
 * **Administrateurs :** Supervision globale, modération des avis et gestion des comptes.
 
 ##  Stack Technique
-Ce projet démontre ma maîtrise des technologies modernes de développement web :
-* **Frontend :** React.js (Hooks, Axios pour la consommation d'API).
-* **Backend :** Laravel (PHP) - Architecture MVC.
-* **Authentification :** Laravel Sanctum (Gestion sécurisée par tokens).
-* **Base de données :** MySQL.
-* **Modélisation :** UML (Diagrammes de classes et de cas d'utilisation).
+Maîtrise complète du cycle de développement web et logiciel :
 
+* **Frontend :** React.js, JavaScript (ES6+), HTML5, CSS3, Bootstrap 5.
+* **Backend :** PHP (Laravel), Java (POO avancée).
+* **Architecture :** Programmation Orientée Objet (POO), Architecture MVC.
+* **Base de données :** MySQL, Modélisation relationnelle.
 ## Fonctionnalités Clés
 * **Système de Réservation :** Gestion en temps réel des disponibilités.
 * **Tableau de Bord :** Visualisation des revenus et statistiques pour les propriétaires.
