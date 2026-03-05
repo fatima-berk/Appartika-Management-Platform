@@ -1,0 +1,688 @@
+/* ClientReviews.css */
+.client-reviews {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.reviews-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.reviews-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.refresh-btn {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.refresh-btn:hover {
+  background: #e8e8e8;
+}
+
+.refresh-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Tabs */
+.reviews-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+.reviews-tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviews-tabs button:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.reviews-tabs button.active {
+  background: #007bff;
+  color: white;
+}
+
+.reviews-tabs button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Liste des avis */
+.reviews-list {
+  display: grid;
+  gap: 20px;
+}
+
+.review-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #007bff;
+}
+
+.review-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.review-apartment-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.review-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.review-rating-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  background: #f8f9fa;
+  border-radius: 20px;
+}
+
+.star-filled {
+  color: #ffc107;
+}
+
+.star-empty {
+  color: #ddd;
+}
+
+.rating-number {
+  font-weight: 600;
+  color: #333;
+  margin-left: 4px;
+}
+
+.review-content {
+  margin-bottom: 15px;
+}
+
+.review-comment {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.review-meta {
+  font-size: 13px;
+  color: #666;
+}
+
+.review-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.review-response {
+  background: #f8f9fa;
+  border-left: 3px solid #007bff;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.response-header {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.response-text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.review-actions {
+  display: flex;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.btn-edit-review, .btn-delete-review {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-edit-review {
+  background: #17a2b8;
+  color: white;
+}
+
+.btn-edit-review:hover {
+  background: #138496;
+}
+
+.btn-delete-review {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-delete-review:hover {
+  background: #c82333;
+}
+
+.btn-edit-review:disabled, .btn-delete-review:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Réservations éligibles */
+.can-review-list {
+  display: grid;
+  gap: 20px;
+}
+
+.can-review-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.can-review-card:hover {
+  border-color: #28a745;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.1);
+}
+
+.can-review-info {
+  flex: 1;
+}
+
+.can-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.can-review-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.can-review-status .already-reviewed {
+  background: #f8f9fa;
+  color: #28a745;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.can-review-status .can-review {
+  background: #d4edda;
+  color: #155724;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.can-review-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.can-review-actions {
+  margin-left: 20px;
+}
+
+.btn-create-review, .btn-view-review {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-create-review {
+  background: #28a745;
+  color: white;
+}
+
+.btn-create-review:hover {
+  background: #218838;
+}
+
+.btn-view-review {
+  background: #17a2b8;
+  color: white;
+}
+
+.btn-view-review:hover {
+  background: #138496;
+}
+
+.btn-create-review:disabled, .btn-view-review:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Info box */
+.reviews-info-box {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.info-header h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  padding: 5px 0;
+  color: #555;
+  font-size: 14px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.info-list li:before {
+  content: "•";
+  color: #007bff;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+}
+
+/* État vide */
+.no-results {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.empty-state {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.empty-state-icon {
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.empty-state .btn-primary {
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.empty-state .btn-primary:hover {
+  background: #0056b3;
+}
+
+.empty-state .btn-secondary {
+  padding: 12px 24px;
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.empty-state .btn-secondary:hover {
+  background: #e8e8e8;
+}
+
+/* Critères d'éligibilité */
+.eligibility-criteria {
+  text-align: left;
+  margin: 25px 0;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.eligibility-criteria h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.criteria-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.criteria-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.criteria-icon {
+  color: #28a745;
+}
+
+.empty-state-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* Modal */
+.review-modal {
+  max-width: 600px;
+}
+
+.review-apartment-preview {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.review-apartment-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.review-apartment-info p {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 3px 0;
+}
+
+/* Étoiles de notation */
+.rating-stars-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.star-btn:hover {
+  transform: scale(1.2);
+}
+
+.star-btn.active .star-filled {
+  color: #ffc107;
+}
+
+.rating-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Textarea */
+.review-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.review-textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.char-count {
+  font-size: 12px;
+  color: #666;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.char-warning {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+/* Guidelines */
+.review-guidelines {
+  background: #e8f4fd;
+  border: 1px solid #b3d9ff;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.review-guidelines h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0056b3;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-guidelines ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.review-guidelines li {
+  padding: 3px 0;
+  color: #333;
+  font-size: 13px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.review-guidelines li:before {
+  content: "✓";
+  color: #28a745;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Loading */
+.loading-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .client-reviews {
+    padding: 15px;
+  }
+  
+  .reviews-tabs {
+    flex-direction: column;
+  }
+  
+  .can-review-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .can-review-actions {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .btn-create-review, .btn-view-review {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .empty-state-actions {
+    flex-direction: column;
+  }
+  
+  .empty-state .btn-secondary {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
