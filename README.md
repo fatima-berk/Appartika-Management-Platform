@@ -1,5 +1,16 @@
 #  Appartika - Plateforme de Gestion Locative Immobilière
 
+![Aperçu de l'accueil](./screenshots/dashboard.png)
+![Dashboard Propriétaire](./screenshots/gestionAppartement.png)
+![Dashboard Propriétaire](./screenshots/ajouterApp.png)
+![Dashboard Propriétaire](./screenshots/ajouterImage.png)
+![Dashboard Propriétaire](./screenshots/modifierApp.png)
+![Dashboard Propriétaire](./screenshots/OwnerStatistiques.png)
+![Dashboard Propriétaire](./screenshots/detailsApp.png)
+![Dashboard Propriétaire](./screenshots/emailAutomatique.png)
+![Dashboard Propriétaire](./screenshots/filtrage_statut.png)
+![Dashboard Propriétaire](./screenshots/gestionAvis.png)
+
 **Appartika** est une solution web complète (Full-Stack) conçue pour moderniser et simplifier la gestion des allocations d'appartements.
 
 ---
